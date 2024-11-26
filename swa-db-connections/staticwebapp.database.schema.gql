@@ -1,4 +1,4 @@
-type Expert @model {
+type Session @model {
   id: ID
   name: String
   company: String
