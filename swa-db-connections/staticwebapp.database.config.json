@@ -28,7 +28,7 @@
     }
   },
   "entities": {
-    "Expert": {
+    "Session": {
       "source": "Sessions",
       "permissions": [
         {
