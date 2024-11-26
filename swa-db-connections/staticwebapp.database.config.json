@@ -28,15 +28,38 @@
       }
     }
   },
-  "entities": {
+    "entities": {
     "Session": {
-      "source": "Sessions",
+      "source": {
+        "object": "Ignite2024.Sessions"
+      },
+      "graphql": {
+        "enabled": true,
+        "type": {
+          "singular": "Sessions",
+          "plural": "Sessions"
+        }
+      },
+      "rest": {
+        "enabled": false
+      },
       "permissions": [
         {
+          "role": "anonymous",
           "actions": [
-            "*"
-          ],
-          "role": "anonymous"
+            {
+              "action": "create"
+            },
+            {
+              "action": "read"
+            },
+            {
+              "action": "update"
+            },
+            {
+              "action": "delete"
+            }
+          ]
         }
       ]
     }
